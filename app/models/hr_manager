@@ -1,0 +1,4 @@
+class HRManager:
+    """Business-role placeholder; in a bigger app you’d add auth/permissions, etc."""
+    def __init__(self, name: str):
+        self.name = name
