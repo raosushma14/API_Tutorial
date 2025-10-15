@@ -15,7 +15,7 @@ with st.form("add_emp"):
     salary= st.number_input("Salary", min_value=0.0, step=1000.0, format="%.2f")
     submitted = st.form_submit_button("Add")
     if submitted:
-        r = requests.post(f"{API}/employee", json={
+        r = requests.post(f"{API}/employees", json={
             "first_name": first, "last_name": last,
             "email": email, "age": int(age), "salary": float(salary)
         })
@@ -33,7 +33,7 @@ if r.ok:
     choice = st.selectbox("Delete by ID", options=[""] + ids)
 
 if st.button("Delete") and choice:
-    delr = requests.delete(f"{API}/employee/{choice}")
+    delr = requests.delete(f"{API}/employees/{choice}")
     st.success("Deleted" if delr.status_code == 204 else delr.text)
 
 st.subheader("Stats")

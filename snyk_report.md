@@ -1,12 +1,18 @@
 
- ERROR   Unspecified Error (SNYK-CLI-0000)
-                                                                                        
-           Required packages missing: requests, streamlit, pytest, snyk                 
-                                                                                        
-           Please run `pip install -r requirements.txt`. If the issue persists try agai 
-           n                                                                            
-           with --skip-unresolved.                                                      
+Testing /Users/sushmaravindrarao/Documents/GitHub/API_Tutorial...
 
-Docs:    https://docs.snyk.io/scan-with-snyk/error-catalog#snyk-cli-0000 
-                                                                         
-ID:      urn:snyk:interaction:95f8f034-45ab-4bd9-86fa-e8c6859d2409 
+Organization:      raosushma14
+Package manager:   pip
+Target file:       requirements.txt
+Project name:      API_Tutorial
+Open source:       no
+Project path:      /Users/sushmaravindrarao/Documents/GitHub/API_Tutorial
+Licenses:          enabled
+
+✔ Tested 52 dependencies for known issues, no vulnerable paths found.
+
+Next steps:
+- Run `snyk monitor` to be notified about new related vulnerabilities.
+- Run `snyk test` as part of your CI/test.
+
+
